@@ -1,0 +1,76 @@
+# A space seperated list of all urls the web api should be possible to be accessed with
+WebData::HostAddress=
+# The port for the api server
+WebData::Port=8180
+# If you want to start the web api server.
+WebData::EnableApi=False
+# If you want to start the webinterface server
+WebData::EnableWebinterface=False
+# The folder to host. Leave empty to let the bot look for default locations.
+WebData::WebinterfaceHostPath=
+# Path to the config file
+RightsManager::RightsFile=rights.toml
+# Teamspeak group id giving the Bot enough power to do his job
+MainBot::BotGroupId=0
+# Generate fancy status images as avatar
+MainBot::GenerateStatusAvatar=True
+# Defines how the bot tries to match your !commands.
+# Possible types: exact, substring, ic3, hamming
+MainBot::CommandMatching=ic3
+# A youtube apiv3 'Browser' type key
+YoutubeFactory::ApiKey=AIzaSyBOqG5LUbGSkBfRUoYfUUea37-5xlEyxNs
+# Path to the youtube-dl binary or local git repository
+YoutubeFactory::YoutubedlPath=
+# The absolute or relative path to the plugins folder
+PluginManager::PluginPath=Plugins
+# Write to .status files to store a plugin enable status persistently and restart them on launch.
+PluginManager::WriteStatusFiles=False
+# The default path to look for local resources.
+MediaFactory::DefaultPath=
+# Allows to enable or disable history features completely to save resources.
+HistoryManager::EnableHistory=True
+# The Path to the history database file
+HistoryManager::HistoryFile=history.db
+# Whether or not deleted history ids should be filled up with new songs
+HistoryManager::FillDeletedIds=True
+# The default volume a song should start with
+AudioFramework::DefaultVolume=10
+# The maximum volume a normal user can request
+AudioFramework::MaxUserVolume=30
+# How the bot should play music. Options are: whisper, voice, (!...)
+AudioFramework::AudioMode=whisper
+# The address (and port, default: 9987) of the TeamSpeak3 server
+QueryConnection::Address=172.17.0.1
+# | DO NOT MAKE THIS KEY PUBLIC | The client identity
+QueryConnection::Identity=
+# The client identity security offset
+QueryConnection::IdentityOffset=0
+# The client identity security level which should be calculated before connecting, or "auto" to generate on demand.
+QueryConnection::IdentityLevel=auto
+# The server password. Leave empty for none.
+QueryConnection::ServerPassword=
+# Set this to true, if the server password is hashed.
+QueryConnection::ServerPasswordIsHashed=False
+# Enable this to automatically hash and store unhashed passwords.
+# (Be careful since this will overwrite the 'ServerPassword' field with the hashed value once computed)
+QueryConnection::ServerPasswordAutoHash=False
+# The path to ffmpeg
+QueryConnection::FfmpegPath=ffmpeg
+# Specifies the bitrate (in kbps) for sending audio.
+# Values between 8 and 98 are supported, more or less can work but without guarantees.
+# Reference values: 32 - ok (~5KiB/s), 48 - good (~7KiB/s), 64 - very good (~9KiB/s), 92 - superb (~13KiB/s)
+QueryConnection::AudioBitrate=48
+# Version for the client in the form of <version build>|<platform>|<version sign>
+# Leave empty for default.
+QueryConnection::ClientVersion=
+# Default Nickname when connecting
+QueryConnection::DefaultNickname=AudioBot
+# Default Channel when connectiong
+# Use a channel path or '/<id>', examples: 'Home/Lobby', '/5', 'Home/Afk \/ Not Here'
+QueryConnection::DefaultChannel=
+# The password for the default channel. Leave empty for none. Not required with permission b_channel_join_ignore_password
+QueryConnection::DefaultChannelPassword=
+# The client badges. You can set a comma seperate string with max three GUID's. Here is a list: http://yat.qa/ressourcen/abzeichen-badges/
+QueryConnection::ClientBadges=overwolf=0:badges=
+# Path the playlist folder
+PlaylistManager::PlaylistPath=Playlists
